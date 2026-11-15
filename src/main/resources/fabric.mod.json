@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "starhighlight",
+  "version": "${version}",
+  "name": "Star Highlight",
+  "description": "Highlights entities with a ✯ in their name (Hypixel SkyBlock star mobs).",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.starhighlight.StarHighlightClient"]
+  },
+  "mixins": [
+    { "config": "starhighlight.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": ">=26.3-",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
